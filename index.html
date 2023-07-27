@@ -19,35 +19,33 @@
             <a href="#" class="d-none d-lg-block"><img src="./assets/img/logo.svg" width="120px" alt="logo"></a>
 
             <!-- Search bar -->
-            <form class="w-100 mx-4" role="search">
-                <input class="form-control border-0 bg-body-secondary" type="search" placeholder="Search" aria-label="Search">
+            <form class="w-100 mx-3" role="search">
+                <input class="form-control border-0 bg-body-secondary fontawesome-icon" type="search" placeholder="&#xf002;   Prova a cercare: Lezioni di Laravel" aria-label="Search">
             </form>
 
             <!-- Nav -->
-            <ul class="nav d-flex flex-nowrap d-none d-lg-flex">
+            <ul class="nav flex-nowrap d-none d-lg-flex">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                  <a class="nav-link text-secondary ps-0" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                  <a class="nav-link text-secondary px-0" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                  <a class="nav-link text-secondary pe-0" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
                 </li>
               </ul>
 
-            <!-- Offcanvas -->
-            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <i class="fa fa-bell" aria-hidden="true"></i>
-            </a>              
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A quis incidunt, corporis eum est asperiores facere, corrupti consequuntur explicabo facilis, recusandae fugit perferendis quidem enim ad laudantium nam? Eaque, repudiandae.
-                </div>
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <a class="btn text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell" aria-hidden="true"></i>
+                </a>              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profilo</a></li>
+                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
             </div>
         </div>
     </header>

@@ -19,3 +19,11 @@ main > div{
 #sidebar i{
     width: 1rem;
 }
+
+.fontawesome-icon{
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+#sidebar li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
