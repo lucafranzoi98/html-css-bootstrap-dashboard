@@ -6,11 +6,14 @@ header > div{
     height: 70px;
 }
 
+main > div{
+    height: calc(100vh - 70px);
+}
+
 #sidebar{
     background-image: url("../img/sidebar-bg.png");
     background-color: var(--sidebar-color);
     background-repeat: no-repeat;
-    height: calc(100vh - 70px);
 }
 
 #sidebar i{
