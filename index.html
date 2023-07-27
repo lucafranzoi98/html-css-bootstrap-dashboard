@@ -1,329 +1,391 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/95701d90ff.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container-fluid d-flex align-items-center sticky-top bg-white gx-0 px-2">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Bootstrap Dashboard</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <script src="https://kit.fontawesome.com/95701d90ff.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-            <!-- Logo -->
-            <a href="#" class="d-lg-none"><img src="./assets/img/mobile-logo.png" width="50px" alt="logo"></a>
-            <a href="#" class="d-none d-lg-block"><img src="./assets/img/logo.svg" width="120px" alt="logo"></a>
+<body>
 
-            <!-- Search bar -->
-            <form class="w-100 mx-3" role="search">
-                <input class="form-control border-0 bg-body-secondary fontawesome_icon" type="search" placeholder="&#xf002;   Prova a cercare: Lezioni di Laravel" aria-label="Search">
-            </form>
+   <!-- Header -->
+   <header>
+      <div class="container-fluid d-flex align-items-center sticky-top bg-white gx-0 px-2">
 
-            <!-- Nav -->
-            <ul class="nav flex-nowrap d-none d-lg-flex">
-                <li class="nav-item">
-                  <a class="nav-link text-secondary ps-0" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-secondary px-0" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-secondary pe-0" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
-                </li>
-              </ul>
+         <!-- Logo -->
+         <a href="#" class="d-lg-none"><img src="./assets/img/mobile-logo.png" width="50px" alt="logo"></a>
+         <a href="#" class="d-none d-lg-block"><img src="./assets/img/logo.svg" width="120px" alt="logo"></a>
 
-            <!-- Dropdown -->
-            <div class="dropdown">
-                <a class="btn text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-bell" aria-hidden="true"></i>
-                </a>              
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profilo</a></li>
-                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!-- Header -->
-    
-    <!-- Main -->
-    <main>
-        <div class="container-fluid d-flex gx-0">
+         <!-- Search bar -->
+         <form class="w-100 mx-3" role="search">
+            <input class="form-control border-0 bg-body-secondary fontawesome_icon" type="search"
+               placeholder="&#xf002;   Prova a cercare: Lezioni di Laravel" aria-label="Search">
+         </form>
 
-            <!-- Sidebar -->
-            <div id="sidebar">
-                <ul class="nav flex-column py-4 px-2 h-100 justify-content-between">
-                    <div id="sidebar-up">
-                        <li class="nav-item">
-                            <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa fa-home"></i><div class="d-none d-lg-block mx-3">Home</div></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa-solid fa-chart-simple"></i><div class="d-none d-lg-block mx-3">Stats</div></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa-solid fa-signal"></i><div class="d-none d-lg-block mx-3">Signal</div></a>
-                        </li>
-                    </div>
-                    <div id="sidebar-down">
-                        <li class="nav-item">
-                            <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa-solid fa-gear"></i><div class="d-none d-lg-block mx-3">Admin</div></a>
-                        </li>
-                    </div>                  
-                </ul>
-            </div>
+         <!-- Nav -->
+         <ul class="nav flex-nowrap d-none d-lg-flex">
+            <li class="nav-item">
+               <a class="nav-link text-secondary ps-0" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link text-secondary px-0" href="#"><i class="fa fa-question-circle"
+                     aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link text-secondary pe-0" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            </li>
+         </ul>
+
+         <!-- Dropdown -->
+         <div class="dropdown">
+            <a class="btn text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Profilo</a></li>
+               <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+               <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+   <!-- Header -->
+
+   <!-- Main -->
+   <main>
+      <div class="container-fluid d-flex gx-0">
+
+         <!-- Sidebar -->
+         <div id="sidebar">
+            <ul class="nav flex-column py-4 px-2 h-100 justify-content-between">
+               <div id="sidebar-up">
+                  <li class="nav-item">
+                     <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa fa-home"></i>
+                        <div class="d-none d-lg-block mx-3">Home</div>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white d-flex align-items-center" href="#"><i
+                           class="fa-solid fa-chart-simple"></i>
+                        <div class="d-none d-lg-block mx-3">Stats</div>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white d-flex align-items-center" href="#"><i
+                           class="fa-solid fa-signal"></i>
+                        <div class="d-none d-lg-block mx-3">Signal</div>
+                     </a>
+                  </li>
+               </div>
+               <div id="sidebar-down">
+                  <li class="nav-item">
+                     <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa-solid fa-gear"></i>
+                        <div class="d-none d-lg-block mx-3">Admin</div>
+                     </a>
+                  </li>
+               </div>
+            </ul>
+         </div>
 
 
-            <!-- Dashboard -->
-            <div id="dashboard" class="w-100 overflow-auto">
+         <!-- Dashboard -->
+         <div id="dashboard" class="w-100 overflow-auto">
 
-                <!-- Dashboard Up -->
-                <div class="container-fluid bg-primary text-white py-4 d-md-flex justify-content-between mb-3">
+            <!-- Dashboard Up -->
+            <div class="container-fluid bg-primary text-white py-4 d-md-flex justify-content-between mb-3">
 
-                    <!-- Offcanvas -->
-                    <div class="order-md-1 me-md-5 mb-3">
-                        Nuovo Studente
-                        <a class="btn btn-outline-light ms-3" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas"><i class="fa-solid fa-plus"></i></a>                          
-                        <div class="offcanvas offcanvas-end offcanvas_width" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+               <!-- Offcanvas -->
+               <div class="order-md-1 me-md-5 mb-3">
+                  Nuovo Studente
+                  <a class="btn btn-outline-light ms-3" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                     aria-controls="offcanvas"><i class="fa-solid fa-plus"></i></a>
+                  <div class="offcanvas offcanvas-end offcanvas_width" tabindex="-1" id="offcanvas"
+                     aria-labelledby="offcanvasLabel">
 
-                            <!-- Offcanvas Header -->
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
+                     <!-- Offcanvas Header -->
+                     <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
 
-                            <!-- Offcanvas Body -->
-                            <div class="offcanvas-body">
+                     <!-- Offcanvas Body -->
+                     <div class="offcanvas-body">
 
-                                <!-- Form -->
-                                <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
-                                    <div class="col mb-3">
-                                        <label for="name" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="name">
-                                    </div>
-                                    <div class="col mb-3">
-                                        <label for="surname" class="form-label">Cognome</label>
-                                        <input type="text" class="form-control" id="surname">
-                                    </div>
-                                </div>
-
-                                <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
-                                    <div class="col mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="mail">@</span>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col mb-3">
-                                        <label for="password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="password">
-                                    </div>
-                                </div>
-
-                                <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
-                                    <div class="col mb-3">
-                                        <label for="email" class="form-label">Indirizzo email</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="mail">@</span>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col mb-3">
-                                        <label for="password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="password">
-                                    </div>
-                                </div>
-                                
-                                <div class="mb-3">
-                                    <label for="address" class="form-label">Indirizzo</label>
-                                    <input type="text" class="form-control" id="address">
-                                </div>
-
-                                <div class="d-lg-flex row">
-                                    <div class="col-lg-6 mb-3">
-                                        <label for="city" class="form-label">Città</label>
-                                        <input type="text" class="form-control" id="city">
-                                    </div>
-                                    <div class="col-lg-4 mb-3">
-                                        <label for="nation" class="form-label">Stato</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Scegli...</option>
-                                            <option value="1">Italia</option>
-                                            <option value="2">Danimarca</option>
-                                            <option value="3">Serbia</option>
-                                          </select>
-                                    </div>
-                                    <div class="col-lg-2 mb-3">
-                                        <label for="cap" class="form-label">CAP</label>
-                                        <input type="text" class="form-control" id="cap">
-                                    </div>
-                                </div>
-
-                                <div class="mb-4">
-                                    <label for="photo" class="form-label">Foto</label>
-                                    <input class="form-control" type="file" id="photo">
-                                </div>
-
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Seleziona per proseguire
-                                    </label>
-                                </div>
-
-                                <div class="d-flex">
-                                    <div>
-                                        <button class="btn btn-primary fw-medium me-1" type="submit">Salva</button>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-warning fw-medium text-black" type="submit">Svuota</button>
-                                    </div>
-                                </div>                                
-                                  
-                            </div>
+                        <!-- Form -->
+                        <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
+                           <div class="col mb-3">
+                              <label for="name" class="form-label">Nome</label>
+                              <input type="text" class="form-control" id="name">
+                           </div>
+                           <div class="col mb-3">
+                              <label for="surname" class="form-label">Cognome</label>
+                              <input type="text" class="form-control" id="surname">
+                           </div>
                         </div>
-                    </div>
 
-
-                    <!-- Boolean -->
-                    <div class="mb-3">
-                        <div class="d-flex align-items-baseline mb-1">
-                            <div class="fs-3 me-2">Booelan</div>
-                            <div class="badge fw-normal rounded-pill pill_background">Piano Blaze</div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="badge fw-normal rounded-pill pill_background">3 app</div>
-                            <i class="fa-solid fa-angles-right mx-2"></i>
-                            <div class="badge rounded-pill pill_background d-lg-none"><i class="fa fa-plus" aria-hidden="true"></i></div>
-                            <div class="badge fw-normal rounded-pill pill_background me-2 d-none d-lg-block">Boolean mobile app</div>
-                            <div class="badge fw-normal rounded-pill pill_background me-2 d-none d-lg-block">Boolean web app</div>
-                            <div class="badge fw-normal rounded-pill pill_background d-none d-lg-block">Boolean blog app</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Studenti online -->
-                    <div>
-                        <div>Studenti online negli ultimi 30 minuti</div>
-                        <div class="fs-3">125</div>
-                    </div>
-                </div>
-
-                <!-- Dashboard Down -->
-                <div id="dashboard-down" class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-8">
-
-
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                  Prossime classi
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">An item</li>
-                                  <li class="list-group-item">A second item</li>
-                                  <li class="list-group-item">A third item</li>
-                                </ul>
+                        <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
+                           <div class="col mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <div class="input-group">
+                                 <span class="input-group-text" id="mail">@</span>
+                                 <input type="email" class="form-control">
                               </div>
-
-                              <div class="card mb-3">
-                                <div class="card-header">
-                                    F.A.Q.
-                                </div>
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                          Accordion Item #1
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                          Accordion Item #2
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                          Accordion Item #3
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
+                           </div>
+                           <div class="col mb-3">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password">
+                           </div>
                         </div>
 
-                        <div class="col-12 col-md-4">
-                            <div class="card mb-3">
-                                <div class="card-header">
-                                    Title
-                                </div>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                      <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                      <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                      <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">An item</li>
-                                  <li class="list-group-item">A second item</li>
-                                  <li class="list-group-item">A third item</li>
-                                </ul>
-                                <div class="card-body">
-                                  <a href="#" class="card-link">Card link</a>
-                                  <a href="#" class="card-link">Another link</a>
-                                </div>
+                        <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
+                           <div class="col mb-3">
+                              <label for="email" class="form-label">Indirizzo email</label>
+                              <div class="input-group">
+                                 <span class="input-group-text" id="mail">@</span>
+                                 <input type="email" class="form-control">
                               </div>
+                           </div>
+                           <div class="col mb-3">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password">
+                           </div>
                         </div>
-                    </div>                    
-                </div>
+
+                        <div class="mb-3">
+                           <label for="address" class="form-label">Indirizzo</label>
+                           <input type="text" class="form-control" id="address">
+                        </div>
+
+                        <div class="d-lg-flex row">
+                           <div class="col-lg-6 mb-3">
+                              <label for="city" class="form-label">Città</label>
+                              <input type="text" class="form-control" id="city">
+                           </div>
+                           <div class="col-lg-4 mb-3">
+                              <label for="nation" class="form-label">Stato</label>
+                              <select class="form-select" aria-label="Default select example">
+                                 <option selected>Scegli...</option>
+                                 <option value="1">Italia</option>
+                                 <option value="2">Danimarca</option>
+                                 <option value="3">Serbia</option>
+                              </select>
+                           </div>
+                           <div class="col-lg-2 mb-3">
+                              <label for="cap" class="form-label">CAP</label>
+                              <input type="text" class="form-control" id="cap">
+                           </div>
+                        </div>
+
+                        <div class="mb-4">
+                           <label for="photo" class="form-label">Foto</label>
+                           <input class="form-control" type="file" id="photo">
+                        </div>
+
+                        <div class="form-check mb-3">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                           <label class="form-check-label" for="flexCheckDefault">
+                              Seleziona per proseguire
+                           </label>
+                        </div>
+
+                        <div class="d-flex">
+                           <div>
+                              <button class="btn btn-primary fw-medium me-1" type="submit">Salva</button>
+                           </div>
+                           <div>
+                              <button class="btn btn-warning fw-medium text-black" type="submit">Svuota</button>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- Boolean -->
+               <div class="mb-3">
+                  <div class="d-flex align-items-baseline mb-1">
+                     <div class="fs-3 me-2">Booelan</div>
+                     <div class="badge fw-normal rounded-pill pill_background">Piano Blaze</div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                     <div class="badge fw-normal rounded-pill pill_background">3 app</div>
+                     <i class="fa-solid fa-angles-right mx-2"></i>
+                     <div class="badge rounded-pill pill_background d-lg-none"><i class="fa fa-plus"
+                           aria-hidden="true"></i></div>
+                     <div class="badge fw-normal rounded-pill pill_background me-2 d-none d-lg-block">Boolean mobile app
+                     </div>
+                     <div class="badge fw-normal rounded-pill pill_background me-2 d-none d-lg-block">Boolean web app
+                     </div>
+                     <div class="badge fw-normal rounded-pill pill_background d-none d-lg-block">Boolean blog app</div>
+                  </div>
+               </div>
+
+               <!-- Studenti online -->
+               <div>
+                  <div>Studenti online negli ultimi 30 minuti</div>
+                  <div class="fs-3">125</div>
+               </div>
             </div>
 
-            
-        </div>
-        
-    </main>
-    <!-- Main -->
-
-    <!-- Footer -->
-    <footer>
-
-    </footer>
-    <!-- Footer -->
+            <!-- Dashboard Down -->
+            <div id="dashboard-down" class="container-fluid">
+               <div class="row">
+                  <div class="col-12 col-md-8">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+                     <div class="card mb-4">
+                        <div class="card-header fs-3 fw-medium">
+                           Prossime classi
+                        </div>
+                        <div class="p-2">
+                           <table class="table fw-medium">
+                              <thead>
+                                 <tr>
+                                    <th scope="col" class="fw-medium col-5 col-xl-7">Nome</th>
+                                    <th scope="col" class="fw-medium d-none d-md-table-cell">Data inizio</th>
+                                    <th scope="col" class="fw-medium d-none d-md-table-cell">ROI</th>
+                                    <th scope="col" class="fw-medium">Stato</th>
+                                    <th scope="col" class="fw-medium">Azioni</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td><img src="./assets/img/class-avatar.jpg" class="w_20" alt="class-avatar"><span class="align-middle ms-2">Classe 75</span></td>
+                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td class="badge text-bg-success p-1 my-2">Done</td>
+                                    <td>
+                                       <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></a>
+                                       <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        
+                     </div>
+
+                     <div class="card mb-3">
+                        <div class="card-header">
+                           F.A.Q.
+                        </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Accordion Item #1
+                                 </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFlushExample">
+                                 <div class="accordion-body">Placeholder content for this accordion, which is intended
+                                    to demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion body.</div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Accordion Item #2
+                                 </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFlushExample">
+                                 <div class="accordion-body">Placeholder content for this accordion, which is intended
+                                    to demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Accordion Item #3
+                                 </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFlushExample">
+                                 <div class="accordion-body">Placeholder content for this accordion, which is intended
+                                    to demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                     <div class="card mb-3">
+                        <div class="card-header">
+                           Title
+                        </div>
+                        <ul class="list-group">
+                           <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                              <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                           </li>
+                           <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                              <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                           </li>
+                           <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                              <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Card title</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                              of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                           <li class="list-group-item">An item</li>
+                           <li class="list-group-item">A second item</li>
+                           <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                           <a href="#" class="card-link">Card link</a>
+                           <a href="#" class="card-link">Another link</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+
+   </main>
+   <!-- Main -->
+
+   <!-- Footer -->
+   <footer>
+
+   </footer>
+   <!-- Footer -->
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
