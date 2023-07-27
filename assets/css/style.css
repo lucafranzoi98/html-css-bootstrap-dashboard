@@ -1,5 +1,6 @@
 :root{
     --sidebar-color: #041f34;
+    --pills-background: #165abb;
 }
 
 header > div{
@@ -20,10 +21,21 @@ main > div{
     width: 1rem;
 }
 
-.fontawesome-icon{
+.fontawesome_icon{
     font-family: Helvetica, 'FontAwesome', sans-serif;
 }
 
 #sidebar li:hover{
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pill_background{
+    background-color: var(--pills-background);
+}
+
+@media screen and (min-width: 992px){
+    .offcanvas_width{
+        width: 800px !important;
+    }
+    
 }

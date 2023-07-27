@@ -20,7 +20,7 @@
 
             <!-- Search bar -->
             <form class="w-100 mx-3" role="search">
-                <input class="form-control border-0 bg-body-secondary fontawesome-icon" type="search" placeholder="&#xf002;   Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                <input class="form-control border-0 bg-body-secondary fontawesome_icon" type="search" placeholder="&#xf002;   Prova a cercare: Lezioni di Laravel" aria-label="Search">
             </form>
 
             <!-- Nav -->
@@ -57,7 +57,7 @@
 
             <!-- Sidebar -->
             <div id="sidebar">
-                <ul class="nav flex-column py-3 px-2 h-100 justify-content-between">
+                <ul class="nav flex-column py-4 px-2 h-100 justify-content-between">
                     <div id="sidebar-up">
                         <li class="nav-item">
                             <a class="nav-link text-white d-flex align-items-center" href="#"><i class="fa fa-home"></i><div class="d-none d-lg-block mx-3">Home</div></a>
@@ -82,10 +82,135 @@
             <div id="dashboard" class="w-100 overflow-auto">
 
                 <!-- Dashboard Up -->
-                <div class="container-fluid bg-primary text-white py-3 d-md-flex justify-content-between mb-3">
-                    <div class="order-md-1 me-md-5">Nuovo Studente</div>
-                    <div>Boolean</div>
-                    <div>Studenti online</div>
+                <div class="container-fluid bg-primary text-white py-4 d-md-flex justify-content-between mb-3">
+
+                    <!-- Offcanvas -->
+                    <div class="order-md-1 me-md-5 mb-3">
+                        Nuovo Studente
+                        <a class="btn btn-outline-light ms-3" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas"><i class="fa-solid fa-plus"></i></a>                          
+                        <div class="offcanvas offcanvas-end offcanvas_width" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+
+                            <!-- Offcanvas Header -->
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <!-- Offcanvas Body -->
+                            <div class="offcanvas-body">
+
+                                <!-- Form -->
+                                <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
+                                    <div class="col mb-3">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="surname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="surname">
+                                    </div>
+                                </div>
+
+                                <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
+                                    <div class="col mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="mail">@</span>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+
+                                <div class="d-lg-flex row row-cols-1 row-cols-lg-2">
+                                    <div class="col mb-3">
+                                        <label for="email" class="form-label">Indirizzo email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="mail">@</span>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Indirizzo</label>
+                                    <input type="text" class="form-control" id="address">
+                                </div>
+
+                                <div class="d-lg-flex row">
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="city" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="city">
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <label for="nation" class="form-label">Stato</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Danimarca</option>
+                                            <option value="3">Serbia</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-lg-2 mb-3">
+                                        <label for="cap" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="cap">
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="photo" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="photo">
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Seleziona per proseguire
+                                    </label>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div>
+                                        <button class="btn btn-primary fw-medium me-1" type="submit">Salva</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-warning fw-medium text-black" type="submit">Svuota</button>
+                                    </div>
+                                </div>                                
+                                  
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Boolean -->
+                    <div class="mb-3">
+                        <div class="d-flex align-items-baseline mb-1">
+                            <div class="fs-3 me-2">Booelan</div>
+                            <div class="badge fw-normal rounded-pill pill_background">Piano Blaze</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="badge fw-normal rounded-pill pill_background">3 app</div>
+                            <i class="fa-solid fa-angles-right mx-2"></i>
+                            <div class="badge rounded-pill pill_background d-lg-none"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                            <div class="badge fw-normal rounded-pill pill_background me-2 d-none d-lg-block">Boolean mobile app</div>
+                            <div class="badge fw-normal rounded-pill pill_background me-2 d-none d-lg-block">Boolean web app</div>
+                            <div class="badge fw-normal rounded-pill pill_background d-none d-lg-block">Boolean blog app</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Studenti online -->
+                    <div>
+                        <div>Studenti online negli ultimi 30 minuti</div>
+                        <div class="fs-3">125</div>
+                    </div>
                 </div>
 
                 <!-- Dashboard Down -->
