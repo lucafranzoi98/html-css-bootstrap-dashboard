@@ -5,12 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/95701d90ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
 
+    <!-- Header -->
+    <header>
+        <div class="container-fluid d-flex align-items-center sticky-top bg-white gx-0 px-2">
 
+            <!-- Logo -->
+            <a href="#" class="d-lg-none"><img src="./assets/img/mobile-logo.png" width="50px" alt="logo"></a>
+            <a href="#" class="d-none d-lg-block"><img src="./assets/img/logo.svg" width="120px" alt="logo"></a>
+
+            <!-- Search bar -->
+            <form class="w-100 mx-4" role="search">
+                <input class="form-control border-0 bg-body-secondary" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+            <!-- Nav -->
+            <ul class="nav d-flex flex-nowrap d-none d-lg-flex">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+
+            <!-- Offcanvas -->
+            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+            </a>              
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A quis incidunt, corporis eum est asperiores facere, corrupti consequuntur explicabo facilis, recusandae fugit perferendis quidem enim ad laudantium nam? Eaque, repudiandae.
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
     
+    <!-- Main -->
+    <main>
+        <div class="container-fluid d-flex gx-0">
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <ul class="nav d-flex flex-column mt-3 px-2">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#"><i class="fa fa-home"></i><span class="d-none d-lg-inline-block mx-3">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline-block mx-3">Stats</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline-block mx-3">Signal</span></a>
+                    </li>
+                  </ul>
+            </div>
+
+            <!-- Principal -->
+            <div id="principal">
+
+            </div>
+            </div>
+        
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    <!-- Footer -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
